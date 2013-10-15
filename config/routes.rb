@@ -2,6 +2,9 @@ VRTonight::Application.routes.draw do
   root :to => 'pages#home'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
+  get 'Rockefeller23' => 'pages#Rockefeller23'
+  get 'property2' => 'pages#property2'
+  get 'property3' => 'pages#property3'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
