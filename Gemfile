@@ -5,17 +5,16 @@ gem 'jquery-rails'
 gem 'rails_12factor'
 gem 'devise'
 gem 'simple_form'
-gem 'unicorn'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :production do
-	gem 'pg'
+        gem 'pg'
 end
 
 group :development, :test do
-	gem 'sqlite3'
+        gem 'sqlite3'
 end
 
 # Gems used only for assets and not required
@@ -37,7 +36,8 @@ end
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
-
+# Use unicorn as the app server
+# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
