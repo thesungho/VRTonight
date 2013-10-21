@@ -7,7 +7,7 @@ Devise.setup do |config|
   config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
 
   #Devise secret key
-  VRTonight::Application.config.secret_key= 'fbc516d22e99ecf20597322a74fc9d2f17c50ef1ebbedaaecc0773ab71966c6ae5c510d4d6f4b2338457b70fb28518b8ceec6280e790eaa8d77a6debaa8c93e0'
+  config.secret_key = 'aa8a9e0816ca1c5a85e5e4e0c767f99a21f304f38f8937c28bd600181e121c7ede64c9572ea3edfa078c470422d278137b391fbc4f0a0a20d1ef947270fb3aac
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
 
