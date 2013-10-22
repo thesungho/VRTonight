@@ -1,7 +1,21 @@
-<h1><center>Book an Awesome Condo Tonight!</center></h1>
-<lead><center>We curate unbooked vacation rentals and show you the best values in each city so you can book them easily and confidently.</center></lead>
-<%= render 'layouts/rockefeller23' %>
-<%= render 'layouts/rockefeller25' %>
-<%= render 'layouts/midtown40' %>
-<%= render 'layouts/midtown41' %>
-<%= render 'layouts/midtown58' %>
+<div id="banner-container" class="row-fluid">
+	<div id="headline-container" class="container">
+		<h1 id="header-font">
+			<center>Book an Awesome Condo Tonight!</center>
+		</h1>
+		<lead>
+			<center id="subheader-font">We curate the day's best unbooked condo rentals so you can book them easily and confidently.</center>
+		</lead>
+	</div>
+	<center>
+		<div id="choose_city" class="btn-group">
+		  <a class="btn btn-large dropdown-toggle" data-toggle="dropdown" href="#">
+		    Choose A City   
+		    <span class="caret"></span>
+		  </a>
+		  <ul class="dropdown-menu">
+		    <%= link_to "New York City, NY", newyork_path %>
+		  </ul>
+		</div>
+	</center>
+</div>   
