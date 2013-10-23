@@ -10,15 +10,11 @@
 #header-font {
 		font-size: 48px;
     color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 #subheader-font {
 	color: white;
 	font-size: 16px;
-  text-shadow: 0 0 2px #000; /* horizontal-offset vertical-offset 'blur' colour */
-  -moz-text-shadow: 0 0 2px #000;
-  -webkit-text-shadow: 0 0 2px #000;
 }
 
 #choose_city {
