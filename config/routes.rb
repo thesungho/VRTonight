@@ -4,6 +4,7 @@ VRTonight::Application.routes.draw do
   get 'newyork' => 'pages#newyork'
   get 'contact' => 'pages#contact'
   get 'austin' => 'pages#austin'
+  get 'rockefeller23' => 'pages#rockefeller23'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
