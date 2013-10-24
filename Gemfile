@@ -9,6 +9,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'unicorn'
 gem 'thin'
+gem 'figaro'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
