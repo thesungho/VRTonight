@@ -1,0 +1,41 @@
+<%=simple_form_for inquiry do |f| %>
+
+  <% if inquiry.errors.any? %>
+    <ul>
+      <% inquiry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  
+  </br>
+
+   <div>
+    <%= f.label :condo, :label => "The name of the condo you'd like to reserve" %><br/>
+    <%= f.text_field :condo %>
+  </div>
+
+  <div>
+    <%= f.label :name, :label => 'Full Name' %><br/>
+    <%= f.text_field :name %>
+  </div>
+  
+  <div>
+    <%= f.label :email, :label => 'Email' %><br/>
+    <%= f.text_field :email %>
+  </div>
+
+  <div>
+    <%= f.label :phone, :label => 'Phone (including area code)' %><br/>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div>
+    <%= f.label :check, :label => 'Expected Check-in Time' %><br/>
+    <%= f.text_field :check %>
+  </div>
+
+  <div class= "form-actions">
+    <%= f.submit "Send", class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -5,6 +5,12 @@ VRTonight::Application.routes.draw do
   get 'contact' => 'pages#contact'
   get 'austin' => 'pages#austin'
   get 'rockefeller23' => 'pages#rockefeller23'
+  get 'inquiry' => 'inquiry#new'
+
+#Reservation process
+  resources :inquiries, :only => [:new, :create] do
+    get 'thank_you', :on => :collection
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
