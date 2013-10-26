@@ -140,6 +140,7 @@ DEPENDENCIES
   devise
   figaro
   jquery-rails
+  mail
   pg
   pony
   rails (= 4.0.0)

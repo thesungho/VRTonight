@@ -35,11 +35,7 @@ class Inquiry
       :from => %("#{name}" <#{email}>),
       :reply_to => "sungho@condorentalstonight.com",
       :subject => "CondoRentalTonight Reservation",
-      :body => condo, 
-      :body => name,
-      :body => email,
-      :body => phone, 
-      :body => check,
+      :body => %("#{condo}" "#{name}" <#{email}> "#{phone}" "#{check}")
     })
   end
       

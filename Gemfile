@@ -11,6 +11,7 @@ gem 'unicorn'
 gem 'thin'
 gem 'figaro'
 gem 'pony'
+gem 'mail'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
