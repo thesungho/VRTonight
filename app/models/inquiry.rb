@@ -17,7 +17,7 @@ class Inquiry
             :presence => true
 
   validates :phone,
-            :length => { :minimum => 7, :maximum => 10 },
+            :length => { :minimum => 7, :maximum => 14 },
             :presence => true     
 
   validates :check,
@@ -35,8 +35,11 @@ class Inquiry
       :from => %("#{name}" <#{email}>),
       :reply_to => "sungho@condorentalstonight.com",
       :subject => "CondoRentalTonight Reservation",
-      :body => message,
-      :html_body => simple_format(message)
+      :body => condo, 
+      :body => name,
+      :body => email,
+      :body => phone, 
+      :body => check,
     })
   end
       
