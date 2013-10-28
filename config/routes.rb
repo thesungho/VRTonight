@@ -2,10 +2,10 @@ VRTonight::Application.routes.draw do
   devise_for :users
   root :to => 'pages#home'
   get 'newyork' => 'pages#newyork'
-  get 'contact' => 'pages#contact'
+  get 'listyourplace' => 'pages#listyourplace'
   get 'austin' => 'pages#austin'
   get 'rockefeller23' => 'pages#rockefeller23'
-  get 'inquiry' => 'inquiry#new'
+  get 'inquiry' => 'inquiries#new'
 
 #Reservation process
   resources :inquiries, :only => [:new, :create] do

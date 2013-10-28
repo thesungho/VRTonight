@@ -1,4 +1,4 @@
-class Inquiry
+class Inquiry 
   extend ActiveModel::Naming
   include ActiveModel::Conversion
   include ActiveModel::Validations
