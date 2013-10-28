@@ -15,20 +15,28 @@
     <%= f.text_field :condo %>
   </div>
 
+  </br>
+
   <div>
     <%= f.label :name, :label => 'Full Name' %><br/>
     <%= f.text_field :name %>
   </div>
+
+  </br>
   
   <div>
     <%= f.label :email, :label => 'Email' %><br/>
     <%= f.text_field :email %>
   </div>
 
+  </br>
+
   <div>
     <%= f.label :phone, :label => 'Phone (including area code)' %><br/>
     <%= f.text_field :phone %>
   </div>
+
+  </br>
 
   <div>
     <%= f.label :check, :label => 'Expected Check-in Time' %><br/>
@@ -36,6 +44,7 @@
   </div>
 
   <div class= "form-actions">
-    <%= f.submit "Send", class: "btn btn-primary" %>
+    <%= link_to "Back", :back, class: "btn btn-large btn-info" %>
+    <%= f.submit "Next", class: "btn btn-large btn-primary" %>
   </div>
 <% end %>

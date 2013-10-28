@@ -5,6 +5,10 @@ VRTonight::Application.routes.draw do
   get 'listyourplace' => 'pages#listyourplace'
   get 'austin' => 'pages#austin'
   get 'rockefeller23' => 'pages#rockefeller23'
+  get 'rockefeller25' => 'pages#rockefeller25'
+  get 'midtown40' => 'pages#midtown40'
+  get 'midtown41' => 'pages#midtown41'
+  get 'midtown58' => 'pages#midtown58'
   get 'inquiry' => 'inquiries#new'
 
 #Reservation process
