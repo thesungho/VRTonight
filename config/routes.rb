@@ -10,6 +10,8 @@ VRTonight::Application.routes.draw do
   get 'midtown41' => 'pages#midtown41'
   get 'midtown58' => 'pages#midtown58'
   get 'inquiry' => 'inquiries#new'
+  get 'austinlistyourplace' => 'pages#austinlistyourplace'
+  get 'houstonlistyourplace' => 'pages#houstonlistyourplace'
 
 #Reservation process
   resources :inquiries, :only => [:new, :create] do
